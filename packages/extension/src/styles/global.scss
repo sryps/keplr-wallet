@@ -32,12 +32,11 @@ $body-color: black;
 
 @import "var";
 
-
 html {
   width: $popup-size-width;
   height: $popup-size-height;
   margin: auto;
-  background-color: $dm1;
+  background-color: white;
 
   overflow: auto;
 }

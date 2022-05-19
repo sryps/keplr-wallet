@@ -144,10 +144,8 @@ export const SettingPage: FunctionComponent = observer(() => {
         <PageButton
           title="Dark Mode"
           onClick={() => {
-            uiConfigStore.setDarkMode(
-              !uiConfigStore.showDarkMode
-            );
-          }}          
+            uiConfigStore.setDarkMode(!uiConfigStore.showDarkMode);
+          }}
           icons={[
             <label
               key="toggle"
@@ -158,9 +156,7 @@ export const SettingPage: FunctionComponent = observer(() => {
                 type="checkbox"
                 checked={uiConfigStore.showDarkMode}
                 onChange={() => {
-                  uiConfigStore.setDarkMode(
-                    !uiConfigStore.showDarkMode
-                  );
+                  uiConfigStore.setDarkMode(!uiConfigStore.showDarkMode);
                 }}
               />
               <span className="custom-toggle-slider rounded-circle" />

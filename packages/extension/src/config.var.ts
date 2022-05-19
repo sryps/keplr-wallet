@@ -19,9 +19,9 @@ export const SECRET_NETWORK_REST_CONFIG:
   | AxiosRequestConfig
   | undefined = undefined;
 
-export const AKASH_RPC_ENDPOINT = "";
+export const AKASH_RPC_ENDPOINT = "https://rpc.akash.forbole.com:443";
 export const AKASH_RPC_CONFIG: AxiosRequestConfig | undefined = undefined;
-export const AKASH_REST_ENDPOINT = "";
+export const AKASH_REST_ENDPOINT = "https://akash.c29r3.xyz:443/api";
 export const AKASH_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
 
 export const IOV_RPC_ENDPOINT = "";
