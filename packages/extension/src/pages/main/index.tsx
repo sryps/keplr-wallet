@@ -36,6 +36,7 @@ export const MainPage: FunctionComponent = observer(() => {
   const currentChainId = chainStore.current.chainId;
   const prevChainId = useRef<string | undefined>();
   useEffect(() => {
+    uiConfigStore.darkStyle(uiConfigStore.showDarkMode);
     if (!chainStore.isInitializing && prevChainId.current !== currentChainId) {
       (async () => {
         const result = await ChainUpdaterService.checkChainUpdate(
@@ -115,6 +116,7 @@ export const MainPage: FunctionComponent = observer(() => {
       }
     >
       <BIP44SelectModal />
+      
       <Card className={classnames(style.card, "shadow")}>
         <CardBody>
           <div className={style.containerAccountInner}>

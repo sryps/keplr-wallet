@@ -140,6 +140,34 @@ export const SettingPage: FunctionComponent = observer(() => {
             </label>,
           ]}
         />
+
+        <PageButton
+          title="Dark Mode"
+          onClick={() => {
+            uiConfigStore.setDarkMode(
+              !uiConfigStore.showDarkMode
+            );
+          }}          
+          icons={[
+            <label
+              key="toggle"
+              className="custom-toggle"
+              style={{ marginBottom: 0 }}
+            >
+              <input
+                type="checkbox"
+                checked={uiConfigStore.showDarkMode}
+                onChange={() => {
+                  uiConfigStore.setDarkMode(
+                    !uiConfigStore.showDarkMode
+                  );
+                }}
+              />
+              <span className="custom-toggle-slider rounded-circle" />
+            </label>,
+          ]}
+        />
+
         <PageButton
           title={intl.formatMessage({
             id: "setting.credit",
