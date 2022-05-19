@@ -45,7 +45,7 @@ body {
   width: $popup-size-width;
   height: $popup-size-height;
 
-  background-color: $dm1;
+  background-color: white;
 
   &[data-lang="ko"] {
     word-break: keep-all;
